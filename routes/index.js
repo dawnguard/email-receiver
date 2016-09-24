@@ -4,7 +4,7 @@ var nodemailer = require('nodemailer');
 
 // create reusable transporter object using the default SMTP transport
 var smtp = process.env.SMTPURL
-// var smtp = 'smtps://elusivefoxy%40gmail.com:Rdbwyldstyle1@smtp.gmail.com';
+
 var transporter = nodemailer.createTransport(smtp);
 
 router.post("", function(req, res) {
