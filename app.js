@@ -14,9 +14,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(expressSanitizer()); // SANITIZES REQUEST BODIES ON ALL ROUTES
 
 
-
-
-
 //using the only route
 app.use("", indexRoute); //--
 
