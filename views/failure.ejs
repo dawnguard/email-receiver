@@ -1,1 +1,44 @@
-<h1>FAIL</h1>
+<% include partials/header %>
+
+<div id="failure">
+  <h1>Failed to send message</h1>
+  <hr id="top">
+  <h2>Don't worry though, your message is not lost!</h2>
+  <br>
+  
+  <p><a href="mailto:elusivefoxy@gmail.com?subject=<%= subject %>&body=<%= body %>">Send the message through your email client</a></p>
+  
+  <div class="or-container">
+                <hr class="or-hr">
+                <div id="or">or</div>
+  </div>
+  
+  <p>Send it manually to elusivefoxy@gmail.com</p>
+  
+  
+  
+  <ul class="list-group">
+  <li class="list-group-item">
+    <span class="tag tag-default tag-pill pull-xs-right">Name</span>
+    <%= name %>
+  </li>
+  <li class="list-group-item">
+    <span class="tag tag-default tag-pill pull-xs-right">Your email</span>
+   <%= email %>
+  </li>
+  <li class="list-group-item">
+    <span class="tag tag-default tag-pill pull-xs-right">Subject</span>
+    <%= subject %>
+  </li>
+  <li class="list-group-item">
+    <span class="tag tag-default tag-pill pull-xs-right">Message</span>
+    <%- body %>
+  </li>
+</ul>
+<br>
+<p> </p>
+</div>
+
+
+
+<% include partials/footer %>

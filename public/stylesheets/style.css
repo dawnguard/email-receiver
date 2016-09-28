@@ -1,0 +1,98 @@
+#success h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #00C851;
+  
+  /*font-size: 3.75rem;*/
+}
+
+#failure h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #d9534f;
+  text-align: center;
+}
+
+#failure h2, p {
+  text-align: center;
+}
+
+#failure h2 {
+  margin-bottom: 1.5rem;
+}
+
+hr {
+  margin: 2rem auto;
+}
+
+
+
+
+#success {
+  text-align: center;
+}
+
+.btn {
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  /*font-size: 1.4rem;*/
+}
+
+.or-container {
+  text-align: center;
+  margin: 20px 0;
+  color: #808080;
+  font-variant: small-caps;
+  margin-bottom: 8px;
+}
+
+#or {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  background-color: #fff;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+.or-hr {
+  margin-bottom: -20px;
+  height: 0;
+  border: 0;
+  border-top: 1px solid #e6e6e6;
+}
+
+
+
+
+/*@media only screen and (max-device-width: 768px), (max-width: 768px) {*/
+  #success .container {
+    text-align: center;
+  }
+  
+  /*h1 {*/
+  /*  font-size: 3rem;*/
+  /*  font-family: 'Roboto', sans-serif;*/
+  /*}*/
+  
+  /*.btn {*/
+  /*  width: 100%;*/
+  /*}*/
+/*}*/
+
+@media only screen and (max-device-width: 480px), (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+    #failure h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .btn {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  #top {
+    margin: 1rem;
+  }
+}

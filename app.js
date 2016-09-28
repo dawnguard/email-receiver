@@ -5,7 +5,6 @@ var express          = require("express"),
     
 //requiring the only route
 var indexRoute = require("./routes/index"); //--
-
     
 // APP CONFIG
 app.set("view engine", "ejs");
@@ -14,8 +13,11 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(expressSanitizer()); // SANITIZES REQUEST BODIES ON ALL ROUTES
 
 
+
+
+
 //using the only route
-app.use("", indexRoute); //--
+app.use("", indexRoute);
 
 
 
